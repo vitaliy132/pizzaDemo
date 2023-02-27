@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 function Main({ imageUrl, title, price, sizes, types }) {
-  const typeNames = ["тонкое", "традиционное"];
+  const typeNames = ["Thin", "Traditional"];
   const [activeType, setActiveType] = useState(0);
   const [activeSize, setActiveSize] = useState(0);
   return (
@@ -26,13 +26,13 @@ function Main({ imageUrl, title, price, sizes, types }) {
                 key={i}
                 onClick={() => setActiveSize(i)}
                 className={activeSize === i ? "active" : ""}>
-                {sizes} см.
+                {sizes} Cm.
               </li>
             ))}
           </ul>
         </div>
         <div className="pizza-block__bottom">
-          <div className="pizza-block__price">{price} ₽</div>
+          <div className="pizza-block__price">{price} UAH</div>
           <div className="button button--outline button--add">
             <svg
               width="12"
@@ -45,7 +45,7 @@ function Main({ imageUrl, title, price, sizes, types }) {
                 fill="white"
               />
             </svg>
-            <span>Добавить</span>
+            <span>Add One</span>
             <i>2</i>
           </div>
         </div>

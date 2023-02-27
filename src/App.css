@@ -513,6 +513,11 @@ body {
   justify-content: center;
   width: 40%;
 }
+.cart__mainInfo {
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+}
 .cart__item-info h3 {
   font-weight: bold;
   font-size: 22px;
